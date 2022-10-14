@@ -17,12 +17,13 @@ public class WenDu {
         while (true) {
             Scanner i = new Scanner(System.in);
             System.out.println("请输入华氏温度 ：");
-            Double hua = i.nextDouble();
-            if(hua instanceof Double){
+            double hua = 0;
+            if (i.hasNextDouble()) {
+                hua = i.nextDouble();
                 double w = (hua - 32) / 1.8;
                 System.out.println("摄氏温度为：" + w);
-            }else{
-                System.out.println("错误，请重新输入：");
+            } else {
+                System.out.println("你的输入有误，请重新输入温度:");
             }
 
         }
