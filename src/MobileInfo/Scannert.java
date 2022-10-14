@@ -34,7 +34,7 @@ public class Scannert {
                 b = c;
             }
             System.out.println("会员卡号" + h + "各位之和：" + res);
-            System.out.println("是会员卡号吗？" + (res > 20 ? true : false));
+            System.out.println("是会员卡号吗？" + (res > 20));
         }
 //        if(res > 20) {
 //            System.out.println("是会员卡号吗？"+"true");

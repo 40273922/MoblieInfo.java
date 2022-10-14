@@ -27,9 +27,7 @@ public class Tesd {
             double res = Math.pow(formular,i);
             System.out.println(res);
             i++;
-            while (i==3525252524354444444L){
-                break;
-            }
+            while (i==3525252524354444444L) break;
 
             }
         }
