@@ -13,14 +13,23 @@ import java.util.Scanner;
  **/
 public class LiXi {
     public static void main(String[] args) {
+        while (true) {
         Scanner a = new Scanner(System.in);
         System.out.println("Enter the monthly saving amount:");
-        double b =a.nextDouble();
-       double r = 0 ;
-        for( int i = 0;i < 6;i++ ){
-            r = (r + 100)*1.00417;
-        }
-        System.out.println("After the sixth month, the account value is $"+r);
+
+            if (a.hasNextDouble()) {
+                double b = a.nextDouble();
+            } else {
+                System.out.println("请重新输入：");
+            }
+
+            double r = 0;
+            for (int i = 0; i < 6; i++) {
+                r = (r + 100) * 1.00417;
+            }
+
+            System.out.println("After the sixth month, the account value is $" + r);
     }
 
+    }
 }
