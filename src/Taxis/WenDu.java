@@ -17,7 +17,7 @@ public class WenDu {
         while (true) {
             Scanner i = new Scanner(System.in);
             System.out.println("请输入华氏温度 ：");
-            double hua = 0;
+            double hua;
             if (i.hasNextDouble()) {
                 hua = i.nextDouble();
                 double w = (hua - 32) / 1.8;
