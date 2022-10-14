@@ -1,4 +1,4 @@
-package MobileInfo;
+package mobileinfo;
 
 /**
  * &#064;program: MobileInfo

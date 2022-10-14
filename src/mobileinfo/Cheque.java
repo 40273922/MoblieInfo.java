@@ -1,4 +1,4 @@
-package MobileInfo;
+package mobileinfo;
 
 import java.util.Scanner;
 
