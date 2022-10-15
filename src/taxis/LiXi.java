@@ -14,22 +14,23 @@ import java.util.Scanner;
 public class LiXi {
     public static void main(String[] args) {
         while (true) {
-        Scanner a = new Scanner(System.in);
-        System.out.println("Enter the monthly saving amount:");
-
+            Scanner a = new Scanner(System.in) ;
+            System.out.println("Enter the monthly saving amount:");
+            double b = 0;
+            double n = 0;
             if (a.hasNextDouble()) {
-                double b = a.nextDouble();
+                b = a.nextDouble();
+                System.out.println("Enter the querymonth:");
+                n = a.nextDouble();
             } else {
                 System.out.println("请重新输入：");
             }
-
             double r = 0;
-            for (int i = 0; i < 6; i++) {
-                r = (r + 100) * 1.00417;
+            for (int i = 0; i < n; i++) {
+                r = (r + b) * 1.00417;
+               // r = Math.pow(r*1.0047, 6);
             }
-
             System.out.println("After the sixth month, the account value is $" + r);
-    }
-
+        }
     }
 }
